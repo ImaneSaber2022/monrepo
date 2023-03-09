@@ -1,5 +1,7 @@
 server:
   port: 8083
+  servlet:
+    context-path: /api
 
 spring:
   datasource:
@@ -7,3 +9,7 @@ spring:
     url: jdbc:mysql://localhost:8082/pfe
     username: root
     password: root
+
+  Logging:
+    level:
+      ma.pfe: INFO
