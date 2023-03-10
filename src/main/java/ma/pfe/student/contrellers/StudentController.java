@@ -22,16 +22,17 @@ public class StudentController {
     }
     @PostMapping
     public long create(@RequestBody StudentDto dto){
-        return service.create(dto);
+       LOG.debug("create dto:{}",dto);
+       return service.create(dto);
     }
     @PutMapping
     public boolean update(@RequestBody StudentDto dto){
-
+        LOG.debug("update dto:{}",dto);
        return service.update(dto);
     }
     @DeleteMapping
     public boolean delete(@PathVariable("id")long id){
-        LOG.debug("start delete");
+        LOG.debug("start delete dto{}",id);
        return service.delete(id);
     }
 
