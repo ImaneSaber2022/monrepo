@@ -1,8 +1,7 @@
-package ma.pfe.student.dtos;
+package ma.pfe.student.models;
 
 
-public class StudentDto {
-
+public class CourseDTO {
     private long id;
     private String name;
 
@@ -24,7 +23,7 @@ public class StudentDto {
 
     @Override
     public String toString() {
-        return "StudentDto{" +
+        return "CourseDTO{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

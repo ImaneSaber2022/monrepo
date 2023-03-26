@@ -15,7 +15,7 @@ public class SwaggerConfig {
         public Docket api() {
             return new Docket(DocumentationType.SWAGGER_2)
                     .select()
-                    .apis(RequestHandlerSelectors.any())
+                    .apis(RequestHandlerSelectors.basePackage("ma.pfe.student.contrellers"))
                     .paths(PathSelectors.any())
                     .build();
         }
